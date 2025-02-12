@@ -1,24 +1,35 @@
-const Roomba = {
-	model: "Romba-1",
-	pawer: 200,
-	batterySize: 2100,
-	boxSize: 0.5,
-	workTime: 45,
-	counterOfStarts: 0,
-	isFull: false,
-	isObstacle: false,
-	isUVLampOn: false,
+// Задание 1: "Управление библиотекой книг"
 
-	startCleaning () {
-		this.counterOfStarts++;
-		console.log('I am cleaning... I have been started: ', this.counterOfStarts, 'times.');
-	},
+class Book {
+	constructor(title, author, pages) {
+		this.title = title;
+		this.author = author;
+		this.pages = pages;
+	}
 
-	goCharge (){
-		console.log('I am going to charge...');
-	},
-	switchUVLamp () {
-		this.isUVLampOn = !this.isUVLampOn;
-		console.log(`UV lamp is ${this.isUVLampOn ? 'working' : 'not working'}.`);
+	displayInfo() {
+		console.log(`Название: ${this.title}, Автор: ${this.author}, Страниц: ${this.pages}`);
 	}
 }
+	
+const book1 = new Book("1984", "Джордж Оруэлл", 328);
+book1.displayInfo();
+
+// Задание 2: "Управление списком студентов"
+
+class Student {
+	constructor(name, age, grade) {
+		this.name = name;
+		this.age = age;
+		this.grade = grade;
+	}
+	displayInfo() {
+		console.log(`Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`);
+	}
+}
+
+const student1 = new Student("John Smith", 16, "10th grade");
+student1.displayInfo();
+
+const student2 = new Student("Jane Doe", 17, "11th grade");
+student2.displayInfo();
