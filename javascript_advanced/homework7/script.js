@@ -16,32 +16,26 @@ function addProductsToList(products) {
 	</li>
 	`;
 	});
-	// Добавляем HTML-код в элемент ul
 	productList.insertAdjacentHTML('beforeend', htmlContent);
-	}
+}
 
 function addToCart(productId) {
-// Найти продукт по ID
 const product = data.find(item => item.id === productId);
-// Если продукт найден, добавить его в корзину
 if (product) {
-// Получаем элемент ul для добавления товаров в корзину
-const cartList = document.getElementById('cart-list');
-// Генерация HTML-кода для товара в корзине
-const cartItemHTML = `
-<li>
-<img src="${product.image}" alt="${product.title}"
-width="50" height="50">
-<h3>${product.title}</h3>
-<p>Price: $${product.price.toFixed(2)}</p>
-</li>
-`;
-// Добавляем товар в корзину
-cartList.insertAdjacentHTML('beforeend', cartItemHTML);
-}
+	const cartList = document.getElementById('cart-list');
+	const cartItemHTML = `
+	<li>
+	<img src="${product.image}" alt="${product.title}"
+	width="50" height="50">
+	<h3>${product.title}</h3>
+	<p>Price: $${product.price.toFixed(2)}</p>
+	</li>
+	`;
+	cartList.insertAdjacentHTML('beforeend', cartItemHTML);
+	}
 }
 
-// Обработчик клика на кнопки "Add to Cart"
+
 document.addEventListener('click', (event) => {
 	if (event.target &&
 	event.target.classList.contains('add-to-cart')) {
