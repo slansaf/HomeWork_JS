@@ -1,4 +1,4 @@
-const apiKey = 'YOUR_UNSPLASH_API_KEY'; // Замените на ваш API-ключ
+const apiKey = 'U6O5rh7H7-o34LnK4jnOdUFU8LbM6TdOKlYNSMR1VzU'; // Замените на ваш API-ключ
 const photoElement = document.getElementById('photo');
 const photographerNameElement = document.getElementById('photographer-name');
 const likeButton = document.getElementById('like-button');
