@@ -1,57 +1,77 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 20px;
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+	margin: 0;
+	padding: 20px;
 }
 
 .container {
-    max-width: 600px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	max-width: 600px;
+	margin: auto;
+	background: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+input,
+textarea {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.blockbuttons{
+	display: flex;
+	justify-content: space-between;
 }
 
 button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: #007bff;
+	color: white;
+	cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
+.link{
+	padding: 10px 20px;
+	text-decoration: none;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	background-color: #007bff;
+	color: white;
+	cursor: pointer;
+}
+
+.link:hover, button:hover {
+	background-color: #0056b3;
+}
+
+.new-link{
+	margin-top: 50px;
 }
 
 .review {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+	margin: 10px 0;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
 }
 
 .review button {
-    background-color: #dc3545;
+	background-color: #dc3545;
 }
 
 .review button:hover {
-    background-color: #c82333;
+	background-color: #c82333;
 }

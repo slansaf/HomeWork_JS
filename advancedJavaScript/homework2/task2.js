@@ -39,7 +39,7 @@ function displayReviews() {
 
 // Функция для добавления отзыва
 function addReview(text) {
-	if (text.length < 50 || text.length > 500) {
+	if (text.length < 10 || text.length > 100) {
 		throw new Error('Длина отзыва должна быть от 50 до 500 символов.');
 	}
 
